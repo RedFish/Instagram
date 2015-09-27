@@ -76,7 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 					UIApplication.sharedApplication().endIgnoringInteractionEvents()
 					
 					if user != nil {//Successful login.
-						print("Logged in")
+						self.performSegueWithIdentifier("login", sender: self)
 					} else {
 						if let errorString = error!.userInfo["error"] as? String {
 							errorMessage = errorString
@@ -119,6 +119,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 	func textFieldShouldReturn(textField: UITextField) -> Bool {
 		self.view.endEditing(true)
 		return true
+	}
+	
+	override func viewDidAppear(animated: Bool) {
+		if PFUser.currentUser()?.objectId != nil { //user already login
+			performSegueWithIdentifier("login", sender: self)
+		}
 	}
 	
 	func displayAlert(title:String, message:String){

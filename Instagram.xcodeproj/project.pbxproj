@@ -24,6 +24,7 @@
 		D41D441C1BB35CBD00DFBB1F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D441B1BB35CBD00DFBB1F /* SystemConfiguration.framework */; };
 		D41D441E1BB35CF400DFBB1F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D441D1BB35CF400DFBB1F /* libz.tbd */; };
 		D41D44201BB35CFD00DFBB1F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D441F1BB35CFD00DFBB1F /* libsqlite3.tbd */; };
+		D41D44231BB4A76F00DFBB1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41D44221BB4A76F00DFBB1F /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D41D441B1BB35CBD00DFBB1F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D41D441D1BB35CF400DFBB1F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D41D441F1BB35CFD00DFBB1F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D41D44221BB4A76F00DFBB1F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				D41D43F71BB35BF400DFBB1F /* AppDelegate.swift */,
 				D41D43F91BB35BF400DFBB1F /* ViewController.swift */,
+				D41D44221BB4A76F00DFBB1F /* TableViewController.swift */,
 				D41D43FB1BB35BF400DFBB1F /* Main.storyboard */,
 				D41D43FE1BB35BF400DFBB1F /* Assets.xcassets */,
 				D41D44001BB35BF400DFBB1F /* LaunchScreen.storyboard */,
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41D43FA1BB35BF400DFBB1F /* ViewController.swift in Sources */,
+				D41D44231BB4A76F00DFBB1F /* TableViewController.swift in Sources */,
 				D41D43F81BB35BF400DFBB1F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +351,7 @@
 				D41D44081BB35BF400DFBB1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
