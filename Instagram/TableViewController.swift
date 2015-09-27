@@ -18,57 +18,25 @@ struct InstagramUser {
 class TableViewController: UITableViewController {
 
 	var users : [InstagramUser]!
+	var refresher : UIRefreshControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 		
 		users = [InstagramUser()]
+		refresher = UIRefreshControl()
+		refresher.attributedTitle = NSAttributedString(string: "Pull to refresh")
+		refresher.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
+		self.tableView.addSubview(refresher)
+		
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
 		
-		
-		let query = PFUser.query()
-		query?.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-			//clear array
-			self.users.removeAll()
-			
-			if error != nil {
-				print("Error finding object")
-			}
-			else if let users = objects{
-				for object in users {
-					if let user = object as? PFUser {
-						if user.objectId != PFUser.currentUser()?.objectId { //only fetch other user (not me)
-							var userToAdd = InstagramUser(username: user.username!, objectId: user.objectId!, isFollowed: false)
-							
-							//check if already followed
-							let query = PFQuery(className: "Followers")
-							query.whereKey("follower", equalTo: (PFUser.currentUser()?.objectId)!)
-							query.whereKey("following", equalTo: user.objectId!)
-							query.findObjectsInBackgroundWithBlock({ (objects, error) -> Void in
-								if error != nil {
-									print("Error finding object")
-								}
-								else {
-									if let obj = objects {
-										if obj.count > 0 {
-											userToAdd.isFollowed = true
-										}
-									}
-									self.users.append(userToAdd)
-									self.tableView.reloadData()
-								}
-							})
-							
-						}
-					}
-				}
-			}
-		}
-    }
+		refresh()
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -93,6 +61,9 @@ class TableViewController: UITableViewController {
         cell.textLabel?.text = users[indexPath.row].username
 		if users[indexPath.row].isFollowed {
 			cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+		}
+		else {
+			cell.accessoryType = UITableViewCellAccessoryType.None
 		}
 
         return cell
@@ -143,6 +114,49 @@ class TableViewController: UITableViewController {
 			})
 
 		}
+	}
+	
+	func refresh(){
+		let query = PFUser.query()
+		query?.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+			//clear array
+			self.users.removeAll()
+			
+			if error != nil {
+				print("Error finding object")
+			}
+			else if let users = objects{
+				for object in users {
+					if let user = object as? PFUser {
+						if user.objectId != PFUser.currentUser()?.objectId { //only fetch other user (not me)
+							var userToAdd = InstagramUser(username: user.username!, objectId: user.objectId!, isFollowed: false)
+							
+							//check if already followed
+							let query = PFQuery(className: "Followers")
+							query.whereKey("follower", equalTo: (PFUser.currentUser()?.objectId)!)
+							query.whereKey("following", equalTo: user.objectId!)
+							query.findObjectsInBackgroundWithBlock({ (objects, error) -> Void in
+								if error != nil {
+									print("Error finding object")
+								}
+								else {
+									if let obj = objects {
+										if obj.count > 0 {
+											userToAdd.isFollowed = true
+										}
+									}
+									self.users.append(userToAdd)
+									self.tableView.reloadData()
+								}
+							})
+							
+						}
+					}
+				}
+			}
+		}
+		
+		refresher.endRefreshing()
 	}
 	
     /*

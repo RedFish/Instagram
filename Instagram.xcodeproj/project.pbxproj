@@ -25,6 +25,8 @@
 		D41D441E1BB35CF400DFBB1F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D441D1BB35CF400DFBB1F /* libz.tbd */; };
 		D41D44201BB35CFD00DFBB1F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D441F1BB35CFD00DFBB1F /* libsqlite3.tbd */; };
 		D41D44231BB4A76F00DFBB1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41D44221BB4A76F00DFBB1F /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D4DB6C721BB87E9700081A52 /* image-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4DB6C711BB87E9700081A52 /* image-placeholder.jpg */; settings = {ASSET_TAGS = (); }; };
+		D4DB6C741BB8858700081A52 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C731BB8858700081A52 /* PostImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		D41D441D1BB35CF400DFBB1F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D41D441F1BB35CFD00DFBB1F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D41D44221BB4A76F00DFBB1F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D4DB6C711BB87E9700081A52 /* image-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-placeholder.jpg"; sourceTree = "<group>"; };
+		D4DB6C731BB8858700081A52 /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +100,11 @@
 				D41D43F71BB35BF400DFBB1F /* AppDelegate.swift */,
 				D41D43F91BB35BF400DFBB1F /* ViewController.swift */,
 				D41D44221BB4A76F00DFBB1F /* TableViewController.swift */,
+				D4DB6C731BB8858700081A52 /* PostImageViewController.swift */,
 				D41D43FB1BB35BF400DFBB1F /* Main.storyboard */,
 				D41D43FE1BB35BF400DFBB1F /* Assets.xcassets */,
 				D41D44001BB35BF400DFBB1F /* LaunchScreen.storyboard */,
+				D4DB6C711BB87E9700081A52 /* image-placeholder.jpg */,
 				D41D44031BB35BF400DFBB1F /* Info.plist */,
 			);
 			path = Instagram;
@@ -183,6 +189,7 @@
 				D41D44021BB35BF400DFBB1F /* LaunchScreen.storyboard in Resources */,
 				D41D43FF1BB35BF400DFBB1F /* Assets.xcassets in Resources */,
 				D41D43FD1BB35BF400DFBB1F /* Main.storyboard in Resources */,
+				D4DB6C721BB87E9700081A52 /* image-placeholder.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DB6C741BB8858700081A52 /* PostImageViewController.swift in Sources */,
 				D41D43FA1BB35BF400DFBB1F /* ViewController.swift in Sources */,
 				D41D44231BB4A76F00DFBB1F /* TableViewController.swift in Sources */,
 				D41D43F81BB35BF400DFBB1F /* AppDelegate.swift in Sources */,
