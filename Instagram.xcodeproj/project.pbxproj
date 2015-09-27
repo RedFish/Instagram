@@ -27,6 +27,8 @@
 		D41D44231BB4A76F00DFBB1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41D44221BB4A76F00DFBB1F /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D4DB6C721BB87E9700081A52 /* image-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4DB6C711BB87E9700081A52 /* image-placeholder.jpg */; settings = {ASSET_TAGS = (); }; };
 		D4DB6C741BB8858700081A52 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C731BB8858700081A52 /* PostImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D4DB6C761BB8A0AC00081A52 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C751BB8A0AC00081A52 /* Cell.swift */; settings = {ASSET_TAGS = (); }; };
+		D4DB6C781BB8A1A100081A52 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C771BB8A1A100081A52 /* FeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		D41D44221BB4A76F00DFBB1F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D4DB6C711BB87E9700081A52 /* image-placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-placeholder.jpg"; sourceTree = "<group>"; };
 		D4DB6C731BB8858700081A52 /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
+		D4DB6C751BB8A0AC00081A52 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		D4DB6C771BB8A1A100081A52 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				D41D43F91BB35BF400DFBB1F /* ViewController.swift */,
 				D41D44221BB4A76F00DFBB1F /* TableViewController.swift */,
 				D4DB6C731BB8858700081A52 /* PostImageViewController.swift */,
+				D4DB6C751BB8A0AC00081A52 /* Cell.swift */,
+				D4DB6C771BB8A1A100081A52 /* FeedTableViewController.swift */,
 				D41D43FB1BB35BF400DFBB1F /* Main.storyboard */,
 				D41D43FE1BB35BF400DFBB1F /* Assets.xcassets */,
 				D41D44001BB35BF400DFBB1F /* LaunchScreen.storyboard */,
@@ -201,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4DB6C741BB8858700081A52 /* PostImageViewController.swift in Sources */,
+				D4DB6C781BB8A1A100081A52 /* FeedTableViewController.swift in Sources */,
 				D41D43FA1BB35BF400DFBB1F /* ViewController.swift in Sources */,
+				D4DB6C761BB8A0AC00081A52 /* Cell.swift in Sources */,
 				D41D44231BB4A76F00DFBB1F /* TableViewController.swift in Sources */,
 				D41D43F81BB35BF400DFBB1F /* AppDelegate.swift in Sources */,
 			);

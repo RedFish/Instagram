@@ -159,6 +159,13 @@ class TableViewController: UITableViewController {
 		refresher.endRefreshing()
 	}
 	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if segue.identifier == "showFeed" { //mind to set the identifier of the segue
+			let controller = (segue.destinationViewController as! UITableViewController) as! FeedTableViewController
+			controller.users = users
+		}
+	}
+	
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

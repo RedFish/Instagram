@@ -4,13 +4,20 @@ Instagram Clone iOS 9 application using Swift 2 (Xcode 7).
 This project is a clone of Instagram which is a famous photo sharing social network.
 The app implements some of the main features of Instagram:
 - Login/Signup page
-- Follow/Unfollow other users  
-
-The app uses :
+- Follow/Unfollow other users 
+- Post pictures (from Photo Library or Camera) 
+- See pictures of users you are following  
+  
+The application uses these elements :  
 - [Parse](https://www.parse.com) Framework
 - TableView
 - Navigation controller
+- UIRefreshControl
+- UIImagePickerController
   
 ## Screenshots:
   
 ![ScreenShot1](https://raw.github.com/RedFish/Instagram/master/Screenshots/Screenshot_1.png)
+![ScreenShot2](https://raw.github.com/RedFish/Instagram/master/Screenshots/Screenshot_2.png)
+![ScreenShot3](https://raw.github.com/RedFish/Instagram/master/Screenshots/Screenshot_3.png)
+![ScreenShot4](https://raw.github.com/RedFish/Instagram/master/Screenshots/Screenshot_4.png)
