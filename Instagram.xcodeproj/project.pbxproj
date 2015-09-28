@@ -29,6 +29,7 @@
 		D4DB6C741BB8858700081A52 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C731BB8858700081A52 /* PostImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D4DB6C761BB8A0AC00081A52 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C751BB8A0AC00081A52 /* Cell.swift */; settings = {ASSET_TAGS = (); }; };
 		D4DB6C781BB8A1A100081A52 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C771BB8A1A100081A52 /* FeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D4DB6C7C1BB9BAE600081A52 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = D4DB6C7B1BB9BAE600081A52 /* logout.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		D4DB6C731BB8858700081A52 /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageViewController.swift; sourceTree = "<group>"; };
 		D4DB6C751BB8A0AC00081A52 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		D4DB6C771BB8A1A100081A52 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		D4DB6C7B1BB9BAE600081A52 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				D41D43FE1BB35BF400DFBB1F /* Assets.xcassets */,
 				D41D44001BB35BF400DFBB1F /* LaunchScreen.storyboard */,
 				D4DB6C711BB87E9700081A52 /* image-placeholder.jpg */,
+				D4DB6C7B1BB9BAE600081A52 /* logout.png */,
 				D41D44031BB35BF400DFBB1F /* Info.plist */,
 			);
 			path = Instagram;
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41D44021BB35BF400DFBB1F /* LaunchScreen.storyboard in Resources */,
+				D4DB6C7C1BB9BAE600081A52 /* logout.png in Resources */,
 				D41D43FF1BB35BF400DFBB1F /* Assets.xcassets in Resources */,
 				D41D43FD1BB35BF400DFBB1F /* Main.storyboard in Resources */,
 				D4DB6C721BB87E9700081A52 /* image-placeholder.jpg in Resources */,

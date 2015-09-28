@@ -4,6 +4,7 @@ Instagram Clone iOS 9 application using Swift 2 (Xcode 7).
 This project is a clone of Instagram which is a famous photo sharing social network.
 The app implements some of the main features of Instagram:
 - Login/Signup page
+- Logout
 - Follow/Unfollow other users 
 - Post pictures (from Photo Library or Camera) 
 - See pictures of users you are following  

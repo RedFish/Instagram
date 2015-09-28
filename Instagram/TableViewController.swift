@@ -160,12 +160,15 @@ class TableViewController: UITableViewController {
 	}
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		if segue.identifier == "showFeed" { //mind to set the identifier of the segue
+		if segue.identifier == "showFeed" {
 			let controller = (segue.destinationViewController as! UITableViewController) as! FeedTableViewController
 			controller.users = users
 		}
+		else if segue.identifier == "logout" {
+			PFUser.logOut()
+			self.navigationController?.setNavigationBarHidden(true, animated: false)
+		}
 	}
-	
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

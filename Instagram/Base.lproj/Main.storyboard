@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -255,11 +256,18 @@
                                 <segue destination="9wc-sW-3ub" kind="show" identifier="showFeed" id="QKc-Pq-5UC"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="vz6-Un-sUz">
-                            <connections>
-                                <segue destination="ieV-vA-lQd" kind="show" id="A3s-jD-Sbz"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Post" id="vz6-Un-sUz">
+                                <connections>
+                                    <segue destination="ieV-vA-lQd" kind="show" id="A3s-jD-Sbz"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="logout.png" id="CM4-gG-a3Q">
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="logout" id="rpE-Ip-o9q"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
@@ -372,5 +380,6 @@
     </scenes>
     <resources>
         <image name="image-placeholder.jpg" width="1280" height="800"/>
+        <image name="logout.png" width="24" height="24"/>
     </resources>
 </document>
