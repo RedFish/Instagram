@@ -111,6 +111,11 @@ class PostImageViewController: UIViewController, UINavigationControllerDelegate,
 		}
 	}
 	
+	//Remove keyboard when touch ouside the keyboard
+	override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+		self.view.endEditing(true)
+	}
+	
 	func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
 		self.dismissViewControllerAnimated(true, completion: nil)
 		isPictureSelected = true
