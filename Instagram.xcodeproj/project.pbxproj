@@ -12,24 +12,23 @@
 		D41D43FD1BB35BF400DFBB1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41D43FB1BB35BF400DFBB1F /* Main.storyboard */; };
 		D41D43FF1BB35BF400DFBB1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41D43FE1BB35BF400DFBB1F /* Assets.xcassets */; };
 		D41D44021BB35BF400DFBB1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41D44001BB35BF400DFBB1F /* LaunchScreen.storyboard */; };
-		D41D440B1BB35C4B00DFBB1F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D44091BB35C4B00DFBB1F /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		D41D440C1BB35C4B00DFBB1F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D440A1BB35C4B00DFBB1F /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		D41D440B1BB35C4B00DFBB1F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D44091BB35C4B00DFBB1F /* Bolts.framework */; };
+		D41D440C1BB35C4B00DFBB1F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D440A1BB35C4B00DFBB1F /* Parse.framework */; };
 		D41D440E1BB35C7400DFBB1F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D440D1BB35C7400DFBB1F /* AudioToolbox.framework */; };
 		D41D44101BB35C8100DFBB1F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D440F1BB35C8100DFBB1F /* CFNetwork.framework */; };
 		D41D44121BB35C8B00DFBB1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D44111BB35C8B00DFBB1F /* CoreGraphics.framework */; };
 		D41D44141BB35C9400DFBB1F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D44131BB35C9400DFBB1F /* CoreLocation.framework */; };
 		D41D44161BB35CA600DFBB1F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D44151BB35CA600DFBB1F /* QuartzCore.framework */; };
 		D41D44181BB35CAD00DFBB1F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D44171BB35CAD00DFBB1F /* Security.framework */; };
-		D41D441A1BB35CB400DFBB1F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D44191BB35CB400DFBB1F /* StoreKit.framework */; };
 		D41D441C1BB35CBD00DFBB1F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D441B1BB35CBD00DFBB1F /* SystemConfiguration.framework */; };
 		D41D441E1BB35CF400DFBB1F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D441D1BB35CF400DFBB1F /* libz.tbd */; };
 		D41D44201BB35CFD00DFBB1F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D41D441F1BB35CFD00DFBB1F /* libsqlite3.tbd */; };
-		D41D44231BB4A76F00DFBB1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41D44221BB4A76F00DFBB1F /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		D4DB6C721BB87E9700081A52 /* image-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4DB6C711BB87E9700081A52 /* image-placeholder.jpg */; settings = {ASSET_TAGS = (); }; };
-		D4DB6C741BB8858700081A52 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C731BB8858700081A52 /* PostImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		D4DB6C761BB8A0AC00081A52 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C751BB8A0AC00081A52 /* Cell.swift */; settings = {ASSET_TAGS = (); }; };
-		D4DB6C781BB8A1A100081A52 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C771BB8A1A100081A52 /* FeedTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		D4DB6C7C1BB9BAE600081A52 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = D4DB6C7B1BB9BAE600081A52 /* logout.png */; settings = {ASSET_TAGS = (); }; };
+		D41D44231BB4A76F00DFBB1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41D44221BB4A76F00DFBB1F /* TableViewController.swift */; };
+		D4DB6C721BB87E9700081A52 /* image-placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4DB6C711BB87E9700081A52 /* image-placeholder.jpg */; };
+		D4DB6C741BB8858700081A52 /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C731BB8858700081A52 /* PostImageViewController.swift */; };
+		D4DB6C761BB8A0AC00081A52 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C751BB8A0AC00081A52 /* Cell.swift */; };
+		D4DB6C781BB8A1A100081A52 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB6C771BB8A1A100081A52 /* FeedTableViewController.swift */; };
+		D4DB6C7C1BB9BAE600081A52 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = D4DB6C7B1BB9BAE600081A52 /* logout.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +47,6 @@
 		D41D44131BB35C9400DFBB1F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D41D44151BB35CA600DFBB1F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D41D44171BB35CAD00DFBB1F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D41D44191BB35CB400DFBB1F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D41D441B1BB35CBD00DFBB1F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D41D441D1BB35CF400DFBB1F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D41D441F1BB35CFD00DFBB1F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -68,7 +66,6 @@
 				D41D44201BB35CFD00DFBB1F /* libsqlite3.tbd in Frameworks */,
 				D41D441E1BB35CF400DFBB1F /* libz.tbd in Frameworks */,
 				D41D441C1BB35CBD00DFBB1F /* SystemConfiguration.framework in Frameworks */,
-				D41D441A1BB35CB400DFBB1F /* StoreKit.framework in Frameworks */,
 				D41D44181BB35CAD00DFBB1F /* Security.framework in Frameworks */,
 				D41D44161BB35CA600DFBB1F /* QuartzCore.framework in Frameworks */,
 				D41D44141BB35C9400DFBB1F /* CoreLocation.framework in Frameworks */,
@@ -125,7 +122,6 @@
 				D41D441F1BB35CFD00DFBB1F /* libsqlite3.tbd */,
 				D41D441D1BB35CF400DFBB1F /* libz.tbd */,
 				D41D441B1BB35CBD00DFBB1F /* SystemConfiguration.framework */,
-				D41D44191BB35CB400DFBB1F /* StoreKit.framework */,
 				D41D44171BB35CAD00DFBB1F /* Security.framework */,
 				D41D44151BB35CA600DFBB1F /* QuartzCore.framework */,
 				D41D44131BB35C9400DFBB1F /* CoreLocation.framework */,
@@ -169,6 +165,12 @@
 				TargetAttributes = {
 					D41D43F31BB35BF400DFBB1F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = BDP2BDP9HM;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -326,6 +328,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -334,6 +338,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guerci.richard.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -341,6 +346,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -349,6 +356,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guerci.richard.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
